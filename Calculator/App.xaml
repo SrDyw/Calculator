@@ -1,0 +1,22 @@
+﻿<Application x:Class="Calculator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <CornerRadius x:Key="DefaultCornerRadius">10</CornerRadius>
+            <Duration x:Key="Fast">0:0:0.1</Duration>
+            <Duration x:Key="Medium">0:0:0.2</Duration>
+            <Duration x:Key="Slow">0:0:0.3</Duration>
+            <Duration x:Key="ExtraSlow">0:0:0.5</Duration>
+            <Color x:Key="Darker">#2f333d</Color>
+            <Color x:Key="Lighter">#486e94</Color>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Theme/ButtonBorderTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/ButtonBorderSecondaryTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
